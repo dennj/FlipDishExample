@@ -109,7 +109,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.21.5", "", { "os": "win32", "cpu": "x64" }, "sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw=="],
 
-    "@flipdish/embed": ["@flipdish/embed@github:dennj/FlipDishEmbed#0677f1d", { "dependencies": { "@radix-ui/react-dialog": "^1.1.15", "embla-carousel-react": "^8.6.0", "lucide-react": "^0.400.0", "openai": "^6.15.0", "use-sync-external-store": "^1.6.0" }, "peerDependencies": { "react": "^18.0.0", "react-dom": "^18.0.0" } }, "dennj-FlipDishEmbed-0677f1d"],
+    "@flipdish/embed": ["@flipdish/embed@github:dennj/FlipDishEmbed#0d45d47", { "dependencies": { "@radix-ui/react-dialog": "^1.1.15", "embla-carousel-react": "^8.6.0", "lucide-react": "^0.400.0", "openai": "^6.15.0", "use-sync-external-store": "^1.6.0" }, "peerDependencies": { "react": "^18.0.0", "react-dom": "^18.0.0" } }, "dennj-FlipDishEmbed-0d45d47"],
 
     "@jridgewell/gen-mapping": ["@jridgewell/gen-mapping@0.3.13", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA=="],
 
