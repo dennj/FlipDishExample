@@ -15,6 +15,7 @@ const config = {
     storeId: parseInt(import.meta.env.VITE_FLIPDISH_STORE_ID || '423747', 10),
     bearerToken: import.meta.env.VITE_FLIPDISH_BEARER_TOKEN || '',
     serverUrl: import.meta.env.VITE_FLIPDISH_SERVER_URL,
+    initialSearch: 'burrito', // Auto-search on load
 };
 
 export default function App() {
