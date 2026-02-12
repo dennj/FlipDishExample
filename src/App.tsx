@@ -4,13 +4,12 @@ import { FlipDishChat, FlipDishProvider } from '@flipdish/embed';
  * Example app demonstrating @flipdish/embed usage
  * 
  * Set these environment variables in .env.local:
- * - VITE_OPENAI_API_KEY=sk-your-key
+ * - VITE_FLIPDISH_SERVER_URL=http://localhost:3000 (or your Vercel URL)
  * - VITE_FLIPDISH_APP_ID=br13241
  * - VITE_FLIPDISH_STORE_ID=423747
  * - VITE_FLIPDISH_BEARER_TOKEN=your-token
  */
 const config = {
-    openaiApiKey: import.meta.env.VITE_OPENAI_API_KEY || '',
     appId: import.meta.env.VITE_FLIPDISH_APP_ID || 'br13241',
     storeId: parseInt(import.meta.env.VITE_FLIPDISH_STORE_ID || '423747', 10),
     bearerToken: import.meta.env.VITE_FLIPDISH_BEARER_TOKEN || '',
@@ -19,8 +18,7 @@ const config = {
 };
 
 export default function App() {
-    // Check for required config (bearerToken optional if serverUrl is present)
-    if (!config.openaiApiKey || (!config.bearerToken && !config.serverUrl)) {
+    if (!config.serverUrl || !config.bearerToken) {
         return (
             <div style={{ padding: 40, textAlign: 'center' }}>
                 <h1>Configuration Required</h1>
